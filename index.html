@@ -5,66 +5,73 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DocKeeper Privacy Policy</title>
 <style>
-  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;max-width:760px;margin:0 auto;padding:24px 18px 60px;color:#0f172a}
-  h1{font-size:1.8rem} h2{margin-top:2rem;font-size:1.2rem} li{margin:.3rem 0}
-  .muted{color:#475569}
-  @media (prefers-color-scheme: dark){body{background:#0b1020;color:#e5e9f5}.muted{color:#9aa6c4}a{color:#9a95ff}}
+:root{--bg:#f7f8fc;--card:#fff;--text:#0f172a;--muted:#475569;--line:#e6eaf6;--accent:#4f46e5;--accent2:#7c3aed;--shadow:0 6px 20px rgba(30,42,90,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#0b1020;--card:#111a33;--text:#e8ecf8;--muted:#9aa6c4;--line:#1f2a4d;--accent:#9a95ff;--accent2:#b79cff;--shadow:none}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.65}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px 56px}
+header{padding:40px 0 20px;text-align:center}
+.logo{width:72px;height:72px;margin:0 auto 14px;border-radius:22px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:1.6rem;background:linear-gradient(135deg,#4f46e5,#7c3aed);box-shadow:0 10px 24px rgba(79,70,229,.4)}
+h1{margin:0;font-size:1.9rem;letter-spacing:-.02em}
+.muted{color:var(--muted)}
+.lead{background:linear-gradient(135deg,rgba(79,70,229,.10),rgba(124,58,237,.10));border:1px solid var(--line);border-radius:20px;padding:18px 20px;margin:18px 0}
+.lead p{margin:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px 20px;margin:14px 0;box-shadow:var(--shadow)}
+h2{margin:0 0 8px;font-size:1.1rem;color:var(--accent)}
+.card p{margin:.4rem 0}
+ul{padding-left:1.2rem;margin:.4rem 0}li{margin:.35rem 0}
+a{color:var(--accent);font-weight:600}
+footer{text-align:center;margin-top:28px;font-size:.9rem}
 </style>
 </head>
 <body>
+<div class="wrap">
+<header>
+<div class="logo">DK</div>
 <h1>DocKeeper Privacy Policy</h1>
 <p class="muted">Last updated: 25 November 2026</p>
-
-<p>DocKeeper ("the app") is a private vault for keeping personal and family documents on your phone. This policy explains what the app does with your information. In short: <strong>your documents stay on your phone, and we do not run any server that receives your data.</strong></p>
-
-<h2>Who we are</h2>
-<p>DocKeeper is published by Deepak Kumar. Contact: <a href="mailto:vasu.deepak12@gmail.com">vasu.deepak12@gmail.com</a>.</p>
-
-<h2>What the app stores</h2>
+</header>
+<div class="lead"><p>DocKeeper ("the app") is a private vault for keeping personal and family documents on your phone. This policy explains what the app does with your information. In short: <strong>your documents stay on your phone, and we do not run any server that receives your data.</strong></p></div>
+<section class="card"><h2>Who we are</h2>
+<p>DocKeeper is published by Deepak Kumar. Contact: <a href="mailto:vasu.deepak12@gmail.com">vasu.deepak12@gmail.com</a>.</p></section>
+<section class="card"><h2>What the app stores</h2>
 <ul>
   <li>Documents you add (photos, scans and PDFs), and details you type about them, such as names, dates, notes and tags.</li>
   <li>The people (profiles) you create to organise documents.</li>
   <li>Your settings, such as theme and reminder days.</li>
 </ul>
-<p>All of this is stored <strong>on your phone only</strong>. Files and document details are encrypted (AES-256), and the encryption key is kept in the phone's secure keystore. We cannot see your documents, and we do not collect them.</p>
-
-<h2>Optional Google Drive backup</h2>
+<p>All of this is stored <strong>on your phone only</strong>. Files and document details are encrypted (AES-256), and the encryption key is kept in the phone's secure keystore. We cannot see your documents, and we do not collect them.</p></section>
+<section class="card"><h2>Optional Google Drive backup</h2>
 <p>If you choose to connect Google Drive, the app signs in with your Google account and saves an encrypted backup file in the private app-data area of <strong>your own</strong> Google Drive. Only DocKeeper can access that area, and it is not visible in your normal Drive files. The app uses your Google account email address only to show which account is connected. We do not receive your email address, your backup or any of your files; the transfer is directly between your phone and your Google Drive. Google's own privacy policy applies to your Google account and Drive.</p>
-<p>Backup is off unless you turn it on. You can disconnect at any time in Settings.</p>
-
-<h2>Permissions the app asks for</h2>
+<p>Backup is off unless you turn it on. You can disconnect at any time in Settings.</p></section>
+<section class="card"><h2>Permissions the app asks for</h2>
 <ul>
   <li><strong>Camera:</strong> only to scan documents when you choose to.</li>
   <li><strong>Photos / files:</strong> only the images or PDFs you pick to add.</li>
   <li><strong>Notifications:</strong> to remind you before a document expires. Reminders are created on your phone; no server is involved.</li>
   <li><strong>Biometrics / fingerprint:</strong> optional, to unlock the app. Your fingerprint or face data is handled by Android and is never given to the app.</li>
   <li><strong>Internet:</strong> only for the optional Google Drive backup and for Google Play features such as update checks and the rating prompt.</li>
-</ul>
-
-<h2>What we do not do</h2>
+</ul></section>
+<section class="card"><h2>What we do not do</h2>
 <ul>
   <li>No ads and no advertising identifiers.</li>
   <li>No analytics or tracking of your use of the app.</li>
   <li>We do not sell or share your information.</li>
   <li>We do not send your documents or details to any server run by us.</li>
-</ul>
-
-<h2>Google Play services</h2>
-<p>The app may use Google Play features (checking for app updates and asking for a rating). These are provided by Google and are covered by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
-
-<h2>Keeping and deleting your data</h2>
-<p>Your data stays on your phone until you delete it. You can delete a document, a person, or everything in the app, and uninstalling the app removes its data from your phone. A backup in your Google Drive stays until you remove it: disconnect and delete it from Google Drive settings (Manage apps, DocKeeper, Delete hidden app data), or erase it through your Google account. Because we hold no copy of your data, we cannot recover it for you if you lose your phone and have no backup.</p>
-
-<h2>Security</h2>
-<p>Files and details are encrypted on the device, and the app can be protected with a PIN and biometrics. No method is perfectly secure, so please keep your phone locked and your PIN private. If you forget your PIN and your security answer, the only way back in is to erase the app's data.</p>
-
-<h2>Children</h2>
-<p>DocKeeper is not directed at children under 18, and we do not knowingly collect information from children.</p>
-
-<h2>Changes to this policy</h2>
-<p>If we change this policy, we will update the date above and publish the new version on this page.</p>
-
-<h2>Contact</h2>
-<p>Questions about privacy? Email <a href="mailto:vasu.deepak12@gmail.com">vasu.deepak12@gmail.com</a>.</p>
+</ul></section>
+<section class="card"><h2>Google Play services</h2>
+<p>The app may use Google Play features (checking for app updates and asking for a rating). These are provided by Google and are covered by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p></section>
+<section class="card"><h2>Keeping and deleting your data</h2>
+<p>Your data stays on your phone until you delete it. You can delete a document, a person, or everything in the app, and uninstalling the app removes its data from your phone. A backup in your Google Drive stays until you remove it: disconnect and delete it from Google Drive settings (Manage apps, DocKeeper, Delete hidden app data), or erase it through your Google account. Because we hold no copy of your data, we cannot recover it for you if you lose your phone and have no backup.</p></section>
+<section class="card"><h2>Security</h2>
+<p>Files and details are encrypted on the device, and the app can be protected with a PIN and biometrics. No method is perfectly secure, so please keep your phone locked and your PIN private. If you forget your PIN and your security answer, the only way back in is to erase the app's data.</p></section>
+<section class="card"><h2>Children</h2>
+<p>DocKeeper is not directed at children under 18, and we do not knowingly collect information from children.</p></section>
+<section class="card"><h2>Changes to this policy</h2>
+<p>If we change this policy, we will update the date above and publish the new version on this page.</p></section>
+<section class="card"><h2>Contact</h2>
+<p>Questions about privacy? Email <a href="mailto:vasu.deepak12@gmail.com">vasu.deepak12@gmail.com</a>.</p></section>
+<footer class="muted">&copy; 2026 Deepak Kumar &middot; <a href="mailto:vasu.deepak12@gmail.com">vasu.deepak12@gmail.com</a></footer>
+</div>
 </body>
 </html>
